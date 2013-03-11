@@ -4,8 +4,6 @@ class SonarGrailsPlugin {
 	def scopes = [excludes: 'war']
 	def grailsVersion = "2.1 > *"
 
-
-	// resources that are excluded from plugin packaging
 	def pluginExcludes = [
 		"grails-app/views/error.gsp"
 	]
@@ -14,10 +12,10 @@ class SonarGrailsPlugin {
 	def author = "Jeff Beck"
 	def authorEmail = "beckje01@gmail.com"
 	def description = '''\
-Brief summary/description of the plugin.
+A plugin that provides a script to generate a pom file for use in Sonar.
 '''
 
-	def documentation = "http://grails.org/plugin/sonar"
+	def documentation = "https://github.com/beckje01/grails-sonar"
 	def license = "APACHE"
 	def issueManagement = [system: "github", url: "https://github.com/beckje01/grails-sonar/issues"]
 	def scm = [url: "https://github.com/beckje01/grails-sonar"]
