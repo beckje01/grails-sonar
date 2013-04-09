@@ -48,29 +48,29 @@ target(createSonarPom: "Create a pom for use with sonar.") {
 								exclude('**/*.*')
 							}
 						}
-						plugin {
-							groupId('org.codehaus.mojo')
-							artifactId('build-helper-maven-plugin')
-							version('1.1')
-							executions {
-								execution {
-									id('add-source')
-									phase('generate-sources')
-									goals {
-										goal('add-source')
+					}
+					plugin {
+						groupId('org.codehaus.mojo')
+						artifactId('build-helper-maven-plugin')
+						version('1.1')
+						executions {
+							execution {
+								id('add-source')
+								phase('generate-sources')
+								goals {
+									goal('add-source')
+								}
+								configuration {
+									sources {
+										source('src/groovy')
+										source('src/java')
 									}
-									configuration {
-										sources {
-											source('src/groovy')
-											source('src/java')
-										}
-									}
-
 								}
 
 							}
 
 						}
+
 					}
 
 				}
