@@ -8,3 +8,9 @@ plugin.xml
 *.iml
 .idea
 sonar-pom.xml
+/out
+mavenInfo.groovy
+grails-sonar-*.zip
+grails-sonar-*.zip.sha1
+c.tld
+fmt.tld

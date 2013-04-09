@@ -5,7 +5,8 @@ class SonarGrailsPlugin {
 	def grailsVersion = "2.1 > *"
 
 	def pluginExcludes = [
-		"grails-app/views/error.gsp"
+		"grails-app/views/error.gsp",
+		"grails-app/conf/mavenInfo.groovy"
 	]
 
 	def title = "Sonar Plugin"
