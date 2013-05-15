@@ -6,7 +6,10 @@ class SonarGrailsPlugin {
 
 	def pluginExcludes = [
 		"grails-app/views/error.gsp",
-		"grails-app/conf/mavenInfo.groovy"
+		"grails-app/conf/mavenInfo.groovy",
+		"grails-app/conf/DataSource.groovy",
+		"grails-app/conf/Config.groovy",
+		"grails-app/conf/UrlMappings.groovy"
 	]
 
 	def title = "Sonar Plugin"
